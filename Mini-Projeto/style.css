@@ -1,0 +1,439 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400&display=swap');
+
+@font-face {
+  font-family: 'IDroid';
+  src: url(Fontes/idroid.otf) format('opentype');
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor0: #C5EBD6;
+  --cor1: #81E2AB;
+  --cor2: #3DDC84;
+  --cor3: #2FA866;
+  --cor4: #1A5C37;
+  --cor5: #063D1E;
+  --cor6: #4ba071;
+
+  --fonteandroid: Idroid, Cursive;  
+  --fontedestaque: Roboto, Cursive;
+  --fontePadrão: Arial, Verdana, Helvetica, Helvetica, sans-serif;
+
+} 
+
+body {
+  overflow: scroll;
+  overflow-x: visible;
+  margin: auto;
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  height: 185px;
+  min-height: 150px;
+  padding-top: 1px;
+}
+
+header h1 {
+  font-family: var(--fontedestaque);
+  display: flexbox;
+  justify-content: center;
+  font-size: 2rem;
+  display: flex;
+  color: #f9fbf9;
+  padding: 15px;
+  padding-top: 25px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+header > p {
+  font-family: var(--fontedestaque);
+  color: #f9fbf9;
+  font-size: 1.2em;
+  max-width: 700px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+.headernav {
+  margin-left: 10px;
+  font-family: var(--fontePadrão);
+  margin-top: 38px;
+}
+
+.button {
+  /* POSITION */
+  position: relative;
+  display: flexbox;
+  justify-content: flex-start;
+  align-content: space-around;
+  padding: 10px;
+  margin: 0px 3px;
+  /* STYLE */
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid var(--cor3);
+  border-right: 2px solid var(--cor3 );
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-top: 2px solid var(--cor3 );
+  border-left: 2px solid var(--cor3);
+  transition: all 0.4s, opacity 0.1s 0.4s;  
+  opacity: 0;
+}
+
+.button:hover:after, .button:hover:before {
+  width: calc(97% + 0px);
+  height: calc(95% + 0px);
+  transition: all 0.4s, opacity 0.1s;
+  opacity: 1;
+}
+
+
+/* FIM DO HEADER */
+/* FIM DO HEADER */
+/* FIM DO HEADER */
+
+main {
+  margin: auto;
+  min-width: 560px;
+  max-width: 1200px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.356);
+  clip-path: inset(0px -15px 0px -15px);
+  padding: 15px;
+  position: relative;
+  text-align: justify;
+}
+
+
+
+
+
+h1 {
+  font-family: var(--fonteandroid);
+  font-weight: 500;
+  color: var(--cor4);
+  margin-top: 5px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: var(--fonteandroid);
+  color: var(--cor4);
+  background-image: linear-gradient(to right, var(--cor1), white);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+main p {
+  line-height: 1.6em;
+  text-indent: 25px;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.bugdroid {
+  max-width: 600px;
+}
+
+strong {
+  color: var(--cor4);
+  font-weight: 700;
+}
+
+
+aside {
+  background-color: var(--cor1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.473);
+
+}
+
+aside > ul {
+  list-style-position: inside;
+  list-style-type: '\2714\00A0\00A0';
+  columns: 2;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+aside h3 {
+  font-family: var(--fontedestaque);
+  color: white;
+  background-color: var(--cor5);
+  padding: 12px;
+  margin: -10px -10px 0 -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.video {
+  background-color: var(--cor5);
+  margin: 0px -15px 30px -15px;
+  position: relative;
+  padding-bottom: 58%;
+}
+
+.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+
+.main-end {
+    font-size: large;
+    margin: auto;
+    position: relative;
+    text-align: justify;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.356);
+    clip-path: inset(0px -15px 0px -15px);
+}
+
+main a{
+  color: var(--cor4);
+  background-color: var(--cor1);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+main a:visited{
+  color: var(--cor4);
+}
+
+main a:link {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.footer {
+  background-color: var(--cor5);
+  height: 100%;
+  width: 100%;
+  font-family: var(--fontedestaque);
+  padding-top: 12px;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+  footer h3 {
+    font-family: var(--fontedestaque);
+  }
+  
+  footer p {
+    font-family: var(--fontedestaque);
+  }
+  
+ /*CODIGO DO VIDEO*/
+    
+footer h3 {
+  font-family: var(--fontedestaque);
+}
+
+footer p {
+  font-family: var(--fontedestaque);
+}
+
+footer {
+  text-shadow: 1px 1px black;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 1rem;
+
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1.2rem 0;
+}
+
+.socials li {
+  margin: 0 5px;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a i {
+  font-size: 1.8rem;
+  transition: color .4 ease;
+}
+
+.socials a:hover i {
+  color: var(--cor2);
+}
+
+.footer-bottom {
+  background-color: #002e14;
+  font-family: var(--fontedestaque);
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+
+}
+
+/* LINKS */
+
+footer a{
+  color: black;
+  padding: 5px;
+}
+
+footer a:visited{
+  color: rgb(255, 255, 255);
+}
+
+footer a:link {
+  text-decoration: none;
+}
+
+.footer-bottom strong {
+  color: white;
+}
+
+/* FIM DO SITE */  
+
+/* ADICIONAIS ABAIXO */
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-widht:750px){
+  .hamburguer{
+    display: block;
+  }
+  
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);    
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);    
+  }
+
+  .button{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--cor5);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;    
+  }
+
+  .header-nav {
+    margin: 16px 0;
+  }
+
+  .button:active {
+    left: 0;
+  }
+
+}
