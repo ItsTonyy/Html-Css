@@ -36,39 +36,40 @@ body {
 
 header {
   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-  height: 185px;
-  min-height: 150px;
-  padding-top: 1px;
+  min-height: 175px;
+  padding-top: 30px;
 }
 
 header h1 {
+  text-align: center;
   font-family: var(--fontedestaque);
-  display: flexbox;
-  justify-content: center;
-  font-size: 2rem;
-  display: flex;
-  color: #f9fbf9;
-  padding: 15px;
-  padding-top: 25px;
+  font-size: 3rem;
+  color: white;
+  font-weight: normal;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
 }
 
-header > p {
+header > span {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 10pxpx;
+  
+  text-align: center;
   font-family: var(--fontedestaque);
   color: #f9fbf9;
-  font-size: 1.2em;
-  max-width: 700px;
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
+  font-size: 1.3em;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
 }
 
 .headernav {
   margin-left: 10px;
   font-family: var(--fontePadrão);
-  margin-top: 38px;
+  padding-top: 40px;
+  padding-bottom: 18px;
 }
 
 .button {
@@ -329,6 +330,7 @@ footer {
 
 .socials a {
   text-decoration: none;
+  color: white;
 }
 
 .socials a i {
@@ -382,58 +384,4 @@ footer a:link {
 
 /* FIM DO SITE */  
 
-/* ADICIONAIS ABAIXO */
 
-.hamburguer {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
-
-@media(max-widht:750px){
-  .hamburguer{
-    display: block;
-  }
-  
-  .hamburguer.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburguer.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);    
-  }
-
-  .hamburguer.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);    
-  }
-
-  .button{
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--cor5);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;    
-  }
-
-  .header-nav {
-    margin: 16px 0;
-  }
-
-  .button:active {
-    left: 0;
-  }
-
-}
